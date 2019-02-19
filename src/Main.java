@@ -16,5 +16,10 @@ public class Main {
 
         double suma = GestorFigures.suma(f);
         System.out.println(suma);
+
+        GestorFigures.sort(f);
+        for (Figura l: f) {
+            System.out.println(l.getClass().getName() + " " + l.area());
+        }
     }
 }
